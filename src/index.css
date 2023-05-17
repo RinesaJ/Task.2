@@ -1,13 +1,90 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+}
+.container{
+    display: flex;
+    max-width: 1300px;
+
+}
+.cards{
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 100px;
+    
+}
+.card{
+    border: 1px solid #DADCE0;
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    position: relative;
+
+}
+.date {
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 300px;
+    height: 20px;
+    font-size: 15px;
+
+ }
+.btn1{
+    width: 75px;
+    height: 25px;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-top: 70px;
+    color: white;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+}
+.pic { 
+    position: absolute;
+    margin-top: 67px;
+    margin-left: 122px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    background-image: url(./profile.png);
+}
+.name{
+    position: absolute;
+    margin-top: 73px;
+    margin-left: 160px;
+    height: 40px;
+    
+}
+.details { 
+    position: absolute;
+    color: #DADCE0;
+    margin-top: 120px;
+    margin-left: 20px;
+    width: 250px;
+    height: 90px;
+    font-size: 13px;
+}
+.btnD{
+    position: absolute;
+    margin-top: 240px;
+    margin-left: 20px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+    .container {
+      padding: 1rem 3rem;
+    }
+  }
+  
